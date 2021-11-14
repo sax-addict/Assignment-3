@@ -1,0 +1,171 @@
+/*
+QUESTIONS:
+1) because saxophones are yellow
+2) #fff021 and #999999
+3) I only want color on the header so its not too distracting, since Yellow is a bright color. This is why I used gray for the main section of the body
+
+Fonts:
+The header and nav bar will use Verdana, The main body will use Georgia
+*/
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .grid-container {
+    display: grid;
+    height: 200px;
+    align-content: center;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    background-color: #fff021;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+  }
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+
+  }
+  .item2 {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+  }
+  
+  .item3 {
+      grid-column: 1;
+      grid-row: 2;
+  }
+  .item4 {
+      grid-column: 2;
+      grid-row: 2;
+  }
+  .item5 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .item6 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  
+  .body-grid {
+    display: grid;
+    height: auto;
+    align-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: 220px 220px 220px 220px 220px 220px;
+    grid-gap: 10px;
+    background-color: #999999;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .body-grid > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+  }
+  .page-nav {
+    grid-column:1;
+    grid-row:1;
+  }
+  .image1 {
+    grid-column:2;
+    grid-row:1;
+  }
+  .text1 {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 2;
+  }
+  .text2 {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 2;
+  }
+  .image2 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .image3 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #999;
+  }
+  li.link {
+    float:right;
+    padding: 10px;
+    width: 25%
+  }
+  a {
+      text-decoration: none;
+      padding:5px;
+      background-color: #777;
+  }
+  li.header {
+    float:left;
+    width: 100%;
+  }
+  .logo {
+    width:80px;
+    height:80px;
+    float:left;
+    padding:10px;
+  }
+  .header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    border: 2px solid black;
+  }
+  
+  .column {
+    float: left;
+    padding: 10px;
+    height: 400px;
+  }
+  
+
+  .column.side {
+    width: 33%;
+    height: 400px;
+  }
+  
+
+  .column.middle {
+    width: 66%;
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
